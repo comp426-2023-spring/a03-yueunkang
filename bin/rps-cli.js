@@ -2,7 +2,6 @@ import {rps} from "../lib/rpsls.js"
 import minimist from 'minimist';
 
 var argv = minimist(process.argv.slice(2));
-// console.log(argv)
 if (argv.h || argv.help) {
     console.log(`Usage: node-rps [SHOT]
         Play Rock Paper Scissors (RPS)
