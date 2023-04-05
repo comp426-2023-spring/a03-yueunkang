@@ -31,9 +31,7 @@ if (argv.r || argv.rules) {
     - Spock VAPORIZES Rock
     - Rock CRUSHES Scissors`);
     process.exit(0);
-}
-
-try {
+} try {
   const res = rpsls(argv._[0]);
   console.log(JSON.stringify(res));
 } catch (error) {
