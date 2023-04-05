@@ -4,8 +4,6 @@ import minimist from 'minimist';
 var argv = minimist(process.argv.slice(2));
 // console.log(argv)
 // argv looks like { _: [ 1, 2, 3, 4, 'hello', 'world' ], h: true, d: true }
-// argv._ returns array of positional args
-// argv.opt returns what's after the opt
 
 if (argv.h || argv.help) {
     console.log(`Usage: node-rps [SHOT]
