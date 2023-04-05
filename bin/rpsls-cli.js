@@ -2,7 +2,7 @@ import {rpsls} from "../lib/rpsls.js"
 import minimist from 'minimist';
 
 var argv = minimist(process.argv.slice(2));
-// argv.opt returns what's after the opt
+
 
 if (argv.h || argv.help) {
     console.log(`Usage: node-rpsls [SHOT]
