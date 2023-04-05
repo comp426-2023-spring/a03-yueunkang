@@ -50,7 +50,6 @@ try {
       node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.
                         e.g {"player":"rock","opponent":"Spock","result":"lose"}`);
     console.log(`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
-
     - Scissors CUTS Paper
     - Paper COVERS Rock
     - Rock SMOOSHES Lizard
