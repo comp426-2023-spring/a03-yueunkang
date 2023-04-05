@@ -1,7 +1,10 @@
+#!/usr/bin/env node
+
 import {rpsls} from "../lib/rpsls.js"
 import minimist from 'minimist';
 
 var argv = minimist(process.argv.slice(2));
+
 if (argv.h || argv.help) {
     console.log(`Usage: node-rpsls [SHOT]
     Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!
@@ -31,7 +34,9 @@ if (argv.r || argv.rules) {
     - Spock VAPORIZES Rock
     - Rock CRUSHES Scissors`);
     process.exit(0);
-} try {
+}
+
+try {
   const res = rpsls(argv._[0]);
   console.log(JSON.stringify(res));
 } catch (error) {
@@ -48,6 +53,7 @@ if (argv.r || argv.rules) {
       node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.
                         e.g {"player":"rock","opponent":"Spock","result":"lose"}`);
     console.log(`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
+
     - Scissors CUTS Paper
     - Paper COVERS Rock
     - Rock SMOOSHES Lizard
