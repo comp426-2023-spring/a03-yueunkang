@@ -2,8 +2,6 @@ import {rpsls} from "../lib/rpsls.js"
 import minimist from 'minimist';
 
 var argv = minimist(process.argv.slice(2));
-
-
 if (argv.h || argv.help) {
     console.log(`Usage: node-rpsls [SHOT]
     Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!
