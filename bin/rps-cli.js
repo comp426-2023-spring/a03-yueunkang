@@ -3,8 +3,6 @@ import minimist from 'minimist';
 
 var argv = minimist(process.argv.slice(2));
 // console.log(argv)
-// argv looks like { _: [ 1, 2, 3, 4, 'hello', 'world' ], h: true, d: true }
-
 if (argv.h || argv.help) {
     console.log(`Usage: node-rps [SHOT]
         Play Rock Paper Scissors (RPS)
