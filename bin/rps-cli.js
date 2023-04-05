@@ -25,7 +25,6 @@ if (argv.r || argv.rules) {
         - Rock CRUSHES Scissors`);
     process.exit(0);
 }
-
 try {
   const res = rps(argv._[0]);
   console.log(JSON.stringify(res));
