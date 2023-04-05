@@ -1,5 +1,4 @@
-{
-    "name": "node-rpsls",
+{ "name": "node-rpsls",
     "version": "1.0.0",
     "description": "Rock paper scissors game",
     "main": "./lib/rpsls.js",
